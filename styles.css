@@ -15,12 +15,11 @@ header {
   justify-content: center;
   width: 100%;
 }
-
-a {
+a{
   text-decoration: none;
-  color: #612999;
-  font-weight: 300;
 }
+
+
 
 li {
   margin: 0 63px;
@@ -59,6 +58,10 @@ a>h2 {
   list-style: none;
   display: flex;
   margin: 32px;
+}
+.nav-link {
+  color: #612999;
+  font-weight: 300;
 }
 
 .nav-link:hover {
@@ -120,6 +123,7 @@ a>h2 {
   /* justify-content: center; */
   grid-template-columns: repeat(auto-fill, 376px);
   gap: 32px;
+  margin-bottom: 32px;
 }
 
 .main-popular {
@@ -136,6 +140,7 @@ a>h2 {
   position: relative;
   border-radius: 30px;
   background-color: #efecff;
+  box-shadow: 0px 6px 40px 0px rgba(57, 132, 187, 0.05);
 }
 
 .item-card>img {
@@ -175,4 +180,62 @@ a>h2 {
   position: absolute;
   right: 51px;
   bottom: 27px;
+}
+
+/* -------------- Footer ------------ */
+footer{
+  background-color: rgba(239, 236, 255, 1);
+}
+
+footer{
+  display:flex;
+  flex-direction: column;
+  font-family: "Nunito";
+  position:relative;
+}
+
+.footer-lists{
+  display: flex;
+}
+
+.footer-who,.footer-follow{
+  margin:32px 32px 24px;
+}
+
+.footer-who-list{
+  list-style: none;
+  padding:0;
+}
+.footer-who>h3,.footer-follow>h3{
+  margin:0;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.footer-who-list>li{
+  margin:8px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+.footer-links{
+  color:black;
+}
+
+.footer-follow{
+  margin-left:118px;
+}
+
+.footer-logo{
+  margin-left: 32px;
+  display:flex;
+  gap:24px;
+}
+
+footer>h3{
+  font-weight: 600;
+  font-size: 16px;
+  margin-top:16px;
+  margin-left:32px;
+  margin-bottom: 51px;
 }
