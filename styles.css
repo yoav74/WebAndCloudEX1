@@ -12,7 +12,7 @@ body {
 header {
   margin: 32px;
   display: inline-flex;
-  justify-content: center;
+  /* justify-content: center; */
   width: 100%;
 }
 a{
@@ -38,12 +38,12 @@ h2 {
 
 .logo>img {
   align-self: center;
-  width: clamp(10px, 10vw, 105px);
-  height: fit-content;
+  width:64px;
 }
 
 a.logo {
   display: inline-flex;
+  margin-right:87px;
 }
 
 a>h2 {
@@ -57,7 +57,8 @@ a>h2 {
 .nav-list {
   list-style: none;
   display: flex;
-  margin: 32px;
+  margin: 32px 63px;
+  padding:0;
 }
 .nav-link {
   color: #612999;
@@ -120,14 +121,13 @@ a>h2 {
 .cards {
   width: 100%;
   display: grid;
-  /* justify-content: center; */
   grid-template-columns: repeat(auto-fill, 376px);
   gap: 32px;
   margin-bottom: 32px;
 }
 
 .main-popular {
-  margin: 32px;
+  margin-left: 32px;
 }
 
 .main-popular>h2 {
