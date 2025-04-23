@@ -1,14 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /*---------------- Global  --------------*/
 body {
-  width: 1200px;
+  /* width: 1200px; */
   margin: 0 auto 0;
   font-family: "Nunito";
+  overflow-x: hidden;
 }
 header {
   margin: 32px;
   display: inline-flex;
+  justify-content: center;
+  width: 100%;
 }
 a {
   text-decoration: none;
@@ -29,6 +33,7 @@ h2 {
 }
 a.logo {
   display: inline-flex;
+  /* margin-right: auto; */
 }
 
 a > h2 {
@@ -41,6 +46,7 @@ a > h2 {
 .nav-list {
   list-style: none;
   display: flex;
+  /* margin-left:auto; */
 }
 
 .nav-link:hover {
@@ -48,6 +54,7 @@ a > h2 {
 }
 
 /* --------------- Main ----------------- */
+/* Picture */
 .main-pic {
   position: relative;
 }
@@ -67,8 +74,12 @@ a > h2 {
 .main-pic-text > p {
   font-size: 24px;
 }
+/* About */
 .main-about {
   margin: 32px;
+}
+.main-about > * {
+  font-family: "Rubik";
 }
 
 .main-about > h2 {
@@ -78,9 +89,56 @@ a > h2 {
   font-weight: 400;
   font-size: 20px;
 }
-.main-popular{
-    margin:32px;
+/* Popular */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 376px);
+  gap: 32px;
 }
-.main-popular>h2{
-    font-size: 40px;
+.main-popular {
+  margin: 32px;
+}
+.main-popular > h2 {
+  font-size: 40px;
+}
+.item-card {
+  width: 376px;
+  height: 496px;
+  position: relative;
+}
+.item-card {
+  border-radius: 30px;
+  background-color: #efecff;
+}
+.item-card > img {
+  border-radius: 30px;
+}
+.heart-img {
+  position: absolute;
+  right: 42px;
+  top: 35px;
+}
+.item-card > h3 {
+  margin: 21px 32px 0px;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Abel";
+}
+
+.item-card > p {
+  margin: 7px 32px;
+  font-family: "Abel";
+  font-size: 18px;
+  font-weight: 400;
+}
+.card-price {
+  margin: 24px 32px 36px;
+  font-family: "Abel";
+  font-weight: 400;
+  font-size: 35px;
+}
+.cart {
+  position: absolute;
+  right: 51px;
+  bottom: 27px;
 }
