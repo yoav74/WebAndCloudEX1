@@ -1,19 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 /*---------------- Global  --------------*/
 body {
-  /* width: 1200px; */
   margin: 0 auto 0;
   font-family: "Nunito";
   overflow-x: hidden;
 }
+
 header {
   margin: 32px;
   display: inline-flex;
   justify-content: center;
   width: 100%;
 }
+
 a {
   text-decoration: none;
   color: #612999;
@@ -21,32 +23,42 @@ a {
 }
 
 li {
-  margin: 0 64px;
+  margin: 0 63px;
   font-size: 30px;
+  gap: 10px;
 }
+
 h2 {
   color: #612999;
 }
+
 /* --------------- Header ----------------------- */
-.logo > * {
+.logo>* {
   margin: 0px 5px 0px 5px;
 }
-a.logo {
-  display: inline-flex;
-  /* margin-right: auto; */
+
+.logo>img {
+  align-self: center;
+  width: clamp(10px, 10vw, 105px);
+  height: fit-content;
 }
 
-a > h2 {
+a.logo {
+  display: inline-flex;
+}
+
+a>h2 {
   color: yellow;
-  font-weight: 600;
+  font-weight: 700;
   -webkit-text-stroke: 0.5px blue;
   align-self: center;
   font-size: 24px;
 }
+
 .nav-list {
   list-style: none;
   display: flex;
-  /* margin-left:auto; */
+  margin: 32px;
 }
 
 .nav-link:hover {
@@ -58,85 +70,107 @@ a > h2 {
 .main-pic {
   position: relative;
 }
+
+.main-img {
+  width: 100%;
+}
+
 .main-pic-text {
   position: absolute;
   width: 448px;
 }
-.main-pic-text > * {
+
+.main-pic-text>* {
   margin: 32px;
   width: 448px;
 }
 
-.main-pic-text > h1 {
+.main-pic-text>h1 {
   font-size: 96px;
   color: #612999;
 }
-.main-pic-text > p {
+
+.main-pic-text>p {
   font-size: 24px;
+  font-weight: 600;
 }
+
 /* About */
 .main-about {
   margin: 32px;
 }
-.main-about > * {
+
+.main-about>* {
   font-family: "Rubik";
 }
 
-.main-about > h2 {
+.main-about>h2 {
   font-size: 40px;
 }
-.main-about > p {
+
+.main-about>p {
   font-weight: 400;
   font-size: 20px;
 }
+
 /* Popular */
 .cards {
+  width: 100%;
   display: grid;
+  /* justify-content: center; */
   grid-template-columns: repeat(auto-fill, 376px);
   gap: 32px;
 }
+
 .main-popular {
   margin: 32px;
 }
-.main-popular > h2 {
+
+.main-popular>h2 {
   font-size: 40px;
 }
+
 .item-card {
   width: 376px;
   height: 496px;
   position: relative;
-}
-.item-card {
   border-radius: 30px;
   background-color: #efecff;
 }
-.item-card > img {
+
+.item-card>img {
   border-radius: 30px;
 }
+
 .heart-img {
   position: absolute;
   right: 42px;
   top: 35px;
 }
-.item-card > h3 {
+
+.item-card>h3 {
   margin: 21px 32px 0px;
   font-size: 30px;
   font-weight: 400;
   font-family: "Abel";
 }
 
-.item-card > p {
+.item-card>p {
   margin: 7px 32px;
   font-family: "Abel";
   font-size: 18px;
   font-weight: 400;
 }
+
 .card-price {
-  margin: 24px 32px 36px;
+  position: absolute;
+  bottom: 36px;
+  margin: 24px 32px 0;
   font-family: "Abel";
   font-weight: 400;
   font-size: 35px;
 }
+
 .cart {
   position: absolute;
   right: 51px;
