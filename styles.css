@@ -22,6 +22,7 @@ a {
 h2 {
   color: #612999;
 }
+
 /* Home Page CSS */
 /* --------------- Header ----------------------- */
 .logo>* {
@@ -240,12 +241,52 @@ footer>h3 {
 }
 
 /* Pokemon Page CSS */
-.main2-pics{
-  margin:32px;
-  display:flex;
-  gap:32px;
+.main2-pics {
+  margin: 32px;
+  display: flex;
+  gap: 32px;
 }
-.main2-pics>img{
-  border:4px solid rgba(230, 219, 254, 1);
-  height:300px;
+
+.main2-pics>img {
+  border: 4px solid rgba(230, 219, 254, 1);
+  height: 300px;
+}
+.main2-list{
+  margin: 32px;
+}
+.main2-list>ul{
+  padding:0;
+}
+
+.main2-list>h1, .main2-choice>h1 {
+  /* margin: 32px; */
+  color: rgba(97, 41, 153, 1);
+  font-size: 40px;
+  font-family: 'Rubik';
+  font-weight: 500;
+}
+
+.main2-list-card {
+  display: flex;
+  align-items: center;
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.main2-list-card>img {
+  margin-right: 16px;
+}
+
+.main2-choice {
+  margin: 16px 32px;
+  margin-bottom: 200px;
+}
+.main2-choice-video{
+  display:flex;
+  justify-content: center;
+  background-color: rgba(239, 236, 255, 1);
+  width: 100%;
+  padding:32px;
 }
